@@ -1,9 +1,9 @@
 
-INSERT INTO burger (name, beschreibung, zutaten, preis)
-VALUES ('Cheeseburger', 'Ein Burger mit Käse', 'Rindfleisch, Käse, Salat, Tomaten', '5.99');
-VALUES ('Chicken Burger', 'Ein Burger mit Hähnchenfleisch', 'Hähnchenfleisch, Salat, Zwiebeln, Mayonnaise', '6.99');
-VALUES ('Veggie Burger', 'Ein fleischloser Burger', 'Gemüse-Patty, Salat, Tomaten, Gewürze', '4.49');
-VALUES ('Mushroom Swiss Burger', 'Ein Burger mit Pilzen und Swiss-Käse', 'Rindfleisch, Pilze, Swiss-Käse, Salat, Zwiebeln', '6.79');
+INSERT INTO burger (burger_id, name, beschreibung, zutaten, preis)
+VALUES ('1', 'Cheeseburger', 'Ein Burger mit Käse', 'Rindfleisch, Käse, Salat, Tomaten', '5.99');
+VALUES ('2','Chicken Burger', 'Ein Burger mit Hähnchenfleisch', 'Hähnchenfleisch, Salat, Zwiebeln, Mayonnaise', '6.99');
+VALUES ('3','Veggie Burger', 'Ein fleischloser Burger', 'Gemüse-Patty, Salat, Tomaten, Gewürze', '4.49');
+VALUES ('4','Mushroom Swiss Burger', 'Ein Burger mit Pilzen und Swiss-Käse', 'Rindfleisch, Pilze, Swiss-Käse, Salat, Zwiebeln', '6.79');
 
 
 INSERT INTO role (role_id, role_name)

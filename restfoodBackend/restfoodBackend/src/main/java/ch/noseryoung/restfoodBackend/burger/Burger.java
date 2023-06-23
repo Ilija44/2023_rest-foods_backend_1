@@ -9,6 +9,8 @@ import javax.validation.constraints.NotEmpty;
 @Entity
 @Data
 @NoArgsConstructor
+@Getter
+@Setter
 
 @Table(name = "burger")
 public class Burger{
@@ -34,4 +36,6 @@ public class Burger{
     @Column(name = "preis")
     @NotEmpty(message = "Preis darf nicht leer sein.")
     private String preis;
+
+
 }
