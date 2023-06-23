@@ -55,8 +55,7 @@ public class BurgerController {
     }
 
     @PutMapping("/{burgerId}")
-    @PreAuthorize("hasAuthority('UPDATE')")
-    @Operation(summary = "Updates an burger in the database with a given ID", description = "Updates an existing burger in the database with the given burger ID. Returns a 401 error code if the ID is not found in the database. Access to this endpoint requires the 'ADMIN' role.")
+    @PreAuthorize("hasAuthority('UPDATE')") @Operation(summary = "Updates an burger in the database with a given ID", description = "Updates an existing burger in the database with the given burger ID. Returns a 401 error code if the ID is not found in the database. Access to this endpoint requires the 'ADMIN' role.")
     public void updateBurger(@Valid @PathVariable("burgerId") int burgerId, @RequestBody Burger burger) {
         log.info("Endpoint for updating burger with ID {} was called.", burgerId);
         service.updateBurger(burgerId, burger);

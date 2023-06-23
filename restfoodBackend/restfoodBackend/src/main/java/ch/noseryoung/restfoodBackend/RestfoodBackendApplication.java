@@ -9,5 +9,4 @@ public class RestfoodBackendApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(RestfoodBackendApplication.class, args);
 	}
-
 }
