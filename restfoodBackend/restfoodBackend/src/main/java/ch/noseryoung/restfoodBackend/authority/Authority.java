@@ -1,4 +1,4 @@
-package ch.noseryoung.project_voucher_aurora.domain.Authority;
+package ch.noseryoung.restfoodBackend.authority;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

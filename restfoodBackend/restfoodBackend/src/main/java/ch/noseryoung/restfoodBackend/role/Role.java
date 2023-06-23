@@ -1,5 +1,5 @@
 package ch.noseryoung.restfoodBackend.role;
-
+import ch.noseryoung.restfoodBackend.authority.Authority;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
