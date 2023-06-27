@@ -11,6 +11,8 @@ public class BurgerService {
     @Autowired
     private BurgerRepository repository;
 
+
+    public List<Burger> getAllProducts(){return repository.findAll();}
     public Burger addBurger(Burger burger) {
         return repository.save(burger);
     }
@@ -24,7 +26,7 @@ public class BurgerService {
         return repository.findAll();
     }
 
-    public void updateBurger(int index, Burger burger) {
+    public void updateBurger(Burger burger) {
         repository.save(burger);
     }
 

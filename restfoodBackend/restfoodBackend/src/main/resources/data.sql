@@ -1,9 +1,9 @@
 
-INSERT INTO burger (burger_id, name, beschreibung, zutaten, preis)
-VALUES ('1', 'Cheeseburger', 'Ein Burger mit Käse', 'Rindfleisch, Käse, Salat, Tomaten', '5.99');
-VALUES ('2','Chicken Burger', 'Ein Burger mit Hähnchenfleisch', 'Hähnchenfleisch, Salat, Zwiebeln, Mayonnaise', '6.99');
-VALUES ('3','Veggie Burger', 'Ein fleischloser Burger', 'Gemüse-Patty, Salat, Tomaten, Gewürze', '4.49');
-VALUES ('4','Mushroom Swiss Burger', 'Ein Burger mit Pilzen und Swiss-Käse', 'Rindfleisch, Pilze, Swiss-Käse, Salat, Zwiebeln', '6.79');
+INSERT INTO burger (burger_id, name, beschreibung, zutaten, preis, vegetarian, img_url)
+VALUES ('1', 'Cheeseburger', 'Ein Burger mit Käse', 'Rindfleisch, Käse, Salat, Tomaten', '5.99', true, 'https://www.eatclub.tv/wp-content/uploads/sites/4/2022/02/smashed-bacon-cheeseburger.jpg');
+VALUES ('2','Chicken Burger', 'Ein Burger mit Hähnchenfleisch', 'Hähnchenfleisch, Salat, Zwiebeln, Mayonnaise', '6.99', false, 'https://luma-delikatessen.ch/magazin-media/filer_public/1d/33/1d338577-d98a-4c01-9b1b-376eea5bc51c/luma-rezept-crispy-chicken-burger-006_low.jpg');
+VALUES ('3','Veggie Burger', 'Ein fleischloser Burger', 'Gemüse-Patty, Salat, Tomaten, Gewürze', '4.49', true, 'https://assets.biggreenegg.eu/app/uploads/2021/03/05092206/banner-vega-falafelburger-2021m03-1-1200x600-1.jpg');
+VALUES ('4','Mushroom Swiss Burger', 'Ein Burger mit Pilzen und Swiss-Käse', 'Rindfleisch, Pilze, Swiss-Käse, Salat, Zwiebeln', '6.79', false, 'https://stpierrebakery-com.s3.amazonaws.com/app/uploads/2021/11/Truffle-Mushroom-Burger.jpg');
 
 
 INSERT INTO role (role_id, role_name)

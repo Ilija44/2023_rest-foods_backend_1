@@ -15,9 +15,16 @@ import javax.validation.constraints.NotEmpty;
 @Table(name = "burger")
 public class Burger{
 
+
+
+
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "burger_id")
     private Integer burgerId;
+    private Integer relevance;
+
 
 
     @Column(name = "name")
@@ -35,7 +42,9 @@ public class Burger{
 
     @Column(name = "preis")
     @NotEmpty(message = "Preis darf nicht leer sein.")
-    private String preis;
+    private Integer preis;
 
+    private boolean vegetarian;
+    private String img_url;
 
 }
