@@ -1,4 +1,4 @@
-package ch.noseryoung.restfoodBackend.authority;
+package ch.noseryoung.restfoodBackend.domain.authority;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

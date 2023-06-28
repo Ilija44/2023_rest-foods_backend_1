@@ -1,4 +1,4 @@
-package ch.noseryoung.restfoodBackend.user;
+package ch.noseryoung.restfoodBackend.domain.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

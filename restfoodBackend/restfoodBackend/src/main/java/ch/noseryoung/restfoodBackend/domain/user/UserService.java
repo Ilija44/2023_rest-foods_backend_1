@@ -1,4 +1,4 @@
-package ch.noseryoung.restfoodBackend.user;
+package ch.noseryoung.restfoodBackend.domain.user;
 
 import lombok.extern.log4j.Log4j2;
 import org.springframework.security.core.GrantedAuthority;

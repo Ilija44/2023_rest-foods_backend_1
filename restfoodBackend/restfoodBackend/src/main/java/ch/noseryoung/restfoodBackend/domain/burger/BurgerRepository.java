@@ -1,4 +1,4 @@
-package ch.noseryoung.restfoodBackend.burger;
+package ch.noseryoung.restfoodBackend.domain.burger;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
