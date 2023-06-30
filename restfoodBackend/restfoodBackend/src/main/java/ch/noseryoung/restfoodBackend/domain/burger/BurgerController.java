@@ -1,4 +1,4 @@
-package ch.noseryoung.restfoodBackend.burger;
+package ch.noseryoung.restfoodBackend.domain.burger;
 
 
 import io.swagger.v3.oas.annotations.Operation;
@@ -18,7 +18,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/burger")
 @Log4j2
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = "http://localhost:3000/")
 public class BurgerController {
     @Autowired
 
@@ -101,7 +101,6 @@ public class BurgerController {
 
 
     @GetMapping("/")
-    @PreAuthorize("hasAuthority('READ')")
     @Operation(summary = "Retrieves a list of all burgers from the database", description = "Retrieves a list of all burgers currently stored in the database. Returns a 200 status code with a list of burgers if the query is successful. Access to this endpoint requires the 'READ' authority.")
     public ResponseEntity<List<Burger>> getBurgers() {
         log.info("Fetching all burgers from DB");
@@ -123,7 +122,6 @@ public class BurgerController {
 
 
     @GetMapping("/{burgerId}")
-    @PreAuthorize("hasAuthority('READ')")
     @Operation(summary = "Retrieves an burger from the database with a given ID", description = "Retrieves an existing burger from the database with the given address ID. Returns a 200 status code with the address object if the ID is found in the database, or a 404 status code if the ID is not found. Access to this endpoint requires the 'READ' authority.")
     public ResponseEntity<Burger> getBurgerById(@PathVariable("burgerId") Integer burgerId) {
         log.info("\n\nGetting burger with ID: " + burgerId + " from the database\n");

@@ -1,4 +1,4 @@
-package ch.noseryoung.restfoodBackend.burger;
+package ch.noseryoung.restfoodBackend.domain.burger;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

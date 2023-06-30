@@ -1,4 +1,4 @@
-package ch.noseryoung.restfoodBackend.role;
+package ch.noseryoung.restfoodBackend.domain.role;
 
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
