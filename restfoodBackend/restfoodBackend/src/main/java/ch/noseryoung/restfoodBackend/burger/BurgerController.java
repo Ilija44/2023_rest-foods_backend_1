@@ -24,7 +24,14 @@ public class BurgerController {
 
     BurgerService service;
 
-    // Existing code...
+    /**
+
+     Diese Methode sortiert eine Liste von Burgern basierend auf dem angegebenen Attribut und der Sortierreihenfolge.
+     @param toSort Die zu sortierende Liste von Burgern.
+     @param attribute Das Attribut, nach dem die Burger sortiert werden sollen. Gültige Werte sind "relevance", "price" und "name".
+     @param order Die Sortierreihenfolge. Gültige Werte sind "asc" für aufsteigend und "desc" für absteigend.
+     @return Die sortierte Liste von Burgern.
+     */
 
     public List<Burger> sort(List<Burger> toSort, String attribute, String order) {
         try {
@@ -61,7 +68,10 @@ public class BurgerController {
 
     }
 
-
+    /** Diese Methode filtert eine Liste von Burgern basierend auf dem angegebenen Filterkriterium.
+     *  @param toFilter Die zu filternde Liste von Burgern.
+     *  @param filterStr Das Filterkriterium, das angewendet werden soll. Das Filterkriterium sollte im Format "Name;Preis;Vegetarisch" sein,
+     *  @return Die gefilterte Liste von Burgern, die den angegebenen Filterkriterien entsprechen. */
     public List<Burger> filter(List<Burger> toFilter, String filterStr) {
         try {
             filterStr = filterStr.toLowerCase();
